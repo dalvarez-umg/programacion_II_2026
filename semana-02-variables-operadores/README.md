@@ -1,70 +1,56 @@
-# Programación II — 2026
+# Semana 2 — Variables y operadores
 
-Repositorio académico del curso **Programación II**.
-
-En este repositorio se almacenarán los ejemplos, ejercicios y proyectos desarrollados durante el semestre utilizando **Java**, **PostgreSQL** y **Spring Boot**.
+Proyecto desarrollado durante la segunda semana del curso **Programación II**.
 
 ---
 
-## Objetivo del curso
+## Objetivo
 
-Desarrollar los fundamentos necesarios para construir aplicaciones en Java, aplicar programación orientada a objetos y crear un backend básico utilizando Spring Boot.
-
----
-
-## Tecnologías y herramientas
-
-- Java
-- IntelliJ IDEA
-- Git
-- GitHub
-- GitHub Desktop
-- PostgreSQL
-- Maven
-- Spring Boot
+Comprender cómo almacenar información en Java mediante variables y utilizar operadores para realizar cálculos y comparaciones.
 
 ---
 
-## Contenido del curso
+## Temas estudiados
 
-### Módulo I — Fundamentos de Java
-
-| Semana | Tema | Contenido |
-|---:|---|---|
-| 1 | Introducción, entorno y GitHub | Instalación, primer proyecto y control de versiones |
-| 2 | [Variables y operadores](./semana-02-variables-operadores/) | Variables, tipos de datos, operadores y entrada de datos |
-| 3 | Condiciones y ciclos | Decisiones y estructuras repetitivas |
-| 4 | Métodos y modularización | Organización y reutilización del código |
-| 5 | Programación orientada a objetos | Clases, objetos, atributos y métodos |
-
-### Módulo II — Java aplicado y fundamentos web
-
-| Semana | Tema |
-|---:|---|
-| 6 | POO aplicada |
-| 7 | Colecciones y excepciones |
-| 8 | PostgreSQL y SQL |
-| 9 | Maven, HTTP y REST |
-| 10 | Spring Boot, JPA y CRUD |
-
-### Módulo III — Backend con Spring Boot
-
-| Semana | Tema |
-|---:|---|
-| 11 | Arquitectura por capas |
-| 12 | DTO y validaciones |
-| 13 | Excepciones y relaciones |
-| 14 | Integración y documentación |
+- Creación de proyectos en IntelliJ IDEA.
+- Estructura básica de un proyecto Java.
+- Clases y método principal.
+- Variables.
+- Tipos de datos.
+- Operadores aritméticos.
+- Operadores comparativos.
+- Operadores lógicos.
+- Entrada de datos con `Scanner`.
+- Salida de datos en consola.
 
 ---
 
-## Estructura del repositorio
+## Tipos de datos utilizados
 
-Cada semana contiene un proyecto independiente:
+| Tipo | Uso | Ejemplo |
+|---|---|---|
+| `String` | Texto | `"Andrea"` |
+| `int` | Números enteros | `20` |
+| `double` | Números decimales | `85.50` |
+| `boolean` | Verdadero o falso | `true` |
+| `char` | Un carácter | `'A'` |
 
-```text
-Programación II - 2026
-├── semana-02-variables-operadores
-├── semana-03-condiciones-ciclos
-├── semana-04-metodos-modularizacion
-└── ...
+---
+
+## Ejemplo básico
+
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        String nombre = "Andrea";
+        int edad = 20;
+        double promedio = 85.5;
+        boolean aprobado = promedio >= 61;
+
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Promedio: " + promedio);
+        System.out.println("¿Aprobó?: " + aprobado);
+    }
+}
